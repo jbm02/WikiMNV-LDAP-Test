@@ -1,0 +1,11 @@
+https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
+https://fr.wikipedia.org/wiki/LDAP_Data_Interchange_Format
+http://www.jmdoudoux.fr/java/dej/chap-jndi.htm
+http://mparienti.developpez.com/cours/openldap
+
+http://www.userbooster.de/en/download/openldap-for-windows.aspx
+http://sourceforge.net/projects/ldapadmin/?source=typ_redirect
+
+http://kukusan-network.blogspot.fr/2012/01/how-to-setting-ldap-openldap-in-windows.html
+
+http://www.java2s.com/Code/JavaAPI/javax.naming/DirContextsearchStringnameStringfilterSearchControlscons.htm

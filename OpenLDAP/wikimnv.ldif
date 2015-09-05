@@ -1,0 +1,76 @@
+## DEFINE DIT ROOT/BASE/SUFFIX ####
+## uses RFC 2377 format
+## replace maxcrc and com as necessary below
+## or for experimentation leave as is
+
+## dcObject is an AUXILLIARY objectclass and MUST
+## have a STRUCTURAL objectclass (organization in this case)
+# this is an ENTRY sequence and is preceded by a BLANK line
+
+dn: dc=wikimnv,dc=com
+dc: wikimnv
+description: WikiMNV
+objectClass: dcObject
+objectClass: organization
+o: Loncoto, Inc.
+
+## FIRST Level hierarchy - people 
+## uses mixed upper and lower case for objectclass
+# this is an ENTRY sequence and is preceded by a BLANK line
+
+dn: ou=core, dc=wikimnv,dc=com
+ou: core
+description: WikiMNV-Core
+objectclass: organizationalunit
+
+dn: ou=consultation, dc=wikimnv,dc=com
+ou: consultation
+description: WikiMNV-Consultation
+objectclass: organizationalunit
+
+
+## SECOND Level hierarchy
+## ADD a single entry under FIRST (people) level
+# this is an ENTRY sequence and is preceded by a BLANK line
+# the ou: Human Resources is the department name
+
+dn: cn=Abdellatif MOHAMED BEN ALI,ou=core,dc=wikimnv,dc=com
+objectclass: inetOrgPerson
+cn: Abdellatif MOHAMED BEN ALI
+cn: Abdel
+sn: MOHAMED BEN ALI
+givenname: Abdellatif
+uid: abdali
+mail: abdel@gpadmail.com
+description: En retard
+ou: Core
+
+dn: cn=Thierry Lalandre,ou=core,dc=wikimnv,dc=com
+objectclass: inetOrgPerson
+cn: Thierry Lalandre
+sn: Lalandre
+givenname: Thierry
+uid: thilal
+mail: thierry@gpadmail.com
+description: En costard
+ou: Core
+
+dn: cn=Loic Visse,ou=consultation,dc=wikimnv,dc=com
+objectclass: inetOrgPerson
+cn: Loic Visse
+sn: Visse
+givenname: Loic
+uid: loivis
+mail: loic@gpadmail.com
+description: Dans la lune
+ou: Consultation
+
+dn: cn=Jean-Baptiste Michel,ou=consultation,dc=wikimnv,dc=com
+objectclass: inetOrgPerson
+cn: Jean-Baptiste Michel
+sn: Michel
+givenname: Jean-Baptiste
+uid: dieu
+mail: dieu@gpadmail.com
+description: Dans les nuages
+ou: Consultation
